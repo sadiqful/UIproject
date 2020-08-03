@@ -8,17 +8,19 @@
 </head>
 <body>
     <div class="container">
-    <div class="image">
-        <img src="./image/image.png">
+    <div class="image-container">
+        <img src="./image/image.png" alt="image" class="profile-image">
     </div>
-    <div class="form">
-        <h1>Member Login</h1>
         <form>
+            <h3>Member Login</h3>
+            <div class="form">
+                
             <input 
             type="email"
             name="email"
             id="email-address"
             placeholder="Email"
+            required
             >
 
             <input
@@ -26,14 +28,15 @@
             name="password"
             id="password"
             placeholder="password"
+            required
             >
 
-            <button>Login</button>
-        </form>
+            <button class="btn">Login</button>
 
         <p class="forgotten">Forgot username/password</p>
         <p class="account">Create your Account</p>
     </div>
+</form>
 </div>
 </body>
 </html>
