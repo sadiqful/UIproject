@@ -3,53 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <title>UI project</title>
+    <title>UI Project</title>
 </head>
 <body>
     <div class="container">
-    <div class="image-container">
-        <img src="./image/image.png" alt="image" class="profile-image">
-    </div>
+        <div class="image-container">
+            <img src="./image/image.png" alt="profile image" class="image">
+        </div>
+
         <form>
-
-            <div>
-            <h3>Member Login</h3>
-            </div>
-            
             <div class="form-container">
+                <div>
+                    <h2> Member Login</h2>
+                </div>
 
-            <span class="icon">
-            <i class="fas fa-envelope"></i>
-            </span>
-            <input 
-            class="form-input"
-            type="Email"
-            name="Email"
-            id="email-address"
-            placeholder="Email"
-            required
-            >
+                <div class="form-field">
+                    <span class="input-icon">
+                    <i class="fas fa-envelope"></i>
+                    </span>
 
-            <span class="lock-icon">
-            <i class="fas fa-lock"></i>
-            </span>
-            <input
-            form="form-input"
-            type="password"
-            name="password"
-            id="password"
-            placeholder="password"
-            required
-            >
+                    <input 
+                    class="form-input" 
+                    type="email" 
+                    placeholder="Email" 
+                    required>
+                    <br/>
+                    
+              
+                    <span class="input-icon">
+                    <i class="fas fa-lock"></i>
+                    </span>
 
-            <button class="btn">Login</button>
+                    <input 
+                    class="form-input" 
+                    type="password" 
+                    placeholder="Password" 
+                    required>
+                    <br/>
 
-        <div class="forgotten">Forgot username/password?</div>
-        <div class="account">Create your Account</div>
+                    <button class="login-btn">Login</button>
+                </div>
+           
+            <div class="forget-password">
+                <a href="#" class="forget">forget Username / password?</a>
+            </div>
+
+            <div class="create-account">
+                <a href="#">Create your account<i class="fas fa-arrow-right"></i></a>
+            </div>
+
+           </div>
+         </form>
     </div>
-</form>
-</div>
 </body>
 </html>

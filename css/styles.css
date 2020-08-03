@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,21 +7,21 @@
 }
 
 body {
-    background-color: #fff;
-    font-family: sans-serif;
-    line-height: 1.2rem;
+    background-color:blueviolet;
+    font-family: 'Abel', sans-serif;
 }
 
 .container {
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    margin: 0 auto;
-    padding: 150px;
+    align-items: center;
+    margin: 10% 12%;
+    border-radius: 2px;
+    background: #fff;
 }
 
 .image-container {
-    height: 500px;
+    height: 400px;
 }
 
 form {
@@ -33,32 +35,28 @@ form {
 }
 
 .form-container {
-    display: -webkit-flex;
     display: flex;
     flex-direction: column;
-    -webkit-justify-content: space-around;
     justify-content: space-around;
     align-items: center;
-    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
-h2 {
+h3 {
     font-size: 250%;
     font-family: 'Abel', serif;
     color: #3e403f;
     margin: 2% auto 10% auto;
 }
 
-.input-item {
+.input-icon {
     color: #333;
     padding: 24px 24px;
     border-radius: 5px 0px 0px 5px;
     position: absolute;
 }
 
-/* inputs form  */
 input[class="form-input"]{
     width: 280px;
     height: 50px;
@@ -79,10 +77,9 @@ input:focus {
     border-radius: 25px;
 }
 
-/* buttons  */
 button {
     display: inline-block;
-    background-color: rgb(3, 145, 3);
+    background-color: #6FB42D;
     color: #fff;
     width: 280px;
     height: 50px;
@@ -97,7 +94,49 @@ button {
     letter-spacing: 0.05em;
 }
 
-/* buttons hover */
-button:hover {
-    transform: translatey(3px);
-    box-shadow: none;
+
+ a {
+    color: #5E6472;
+    text-decoration: none;
+}
+
+
+.create-account {
+    padding-top: 100px;
+}
+
+/* media-queries for responsiveness */
+
+/* tablets */
+@media only screen 
+and (min-device-width: 650px)
+and (max-device-width: 1024px) {
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10% 6%;
+    }
+    
+    .image-container {
+        height: 370px;
+    }
+}
+
+/* mobile */
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width: 767px) {
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin: 10% 6%;
+    }
+    
+    .image-container {
+        height: 40vh;
+        margin-bottom: 120px;
+    }
+}
